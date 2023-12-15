@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Tests",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/NetAlgorithmsApi.Tests/bin/Debug/net8.0/NetAlgorithmsApi.Tests.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/NetAlgorithmsApi.Tests",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

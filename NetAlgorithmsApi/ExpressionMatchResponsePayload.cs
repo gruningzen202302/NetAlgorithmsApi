@@ -1,0 +1,1 @@
+public record ExpressionMatchResponsePayload(bool Match, string Explanation);

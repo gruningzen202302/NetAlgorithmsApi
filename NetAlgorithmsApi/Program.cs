@@ -1,3 +1,5 @@
+using NetAlgorithmsApi;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -38,7 +40,10 @@ app.MapGet("/weatherforecast", () =>
 
 app.MapPost("/expressionMatch", (ExpressionMatchRequest request) =>
 {
-    bool isMatch = false;
+    bool isMatch = new Logic().IsMatch(request);
+
+
+
     return Results.Ok(new { isMatch = isMatch });
 })
 .WithName("ExpressionMatch")
@@ -50,3 +55,5 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+
