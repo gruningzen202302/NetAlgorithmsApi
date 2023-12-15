@@ -1,0 +1,6 @@
+@NetAlgorithmsApi_HostAddress = http://localhost:5067
+
+GET {{NetAlgorithmsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
